@@ -1,2 +1,21 @@
-# simple-timetrackers
-Bash scripts to control the time spend programming.
+# Tracker
+No intrusive time tracker.
+
+## Why?
+
+I needed track the time spend programming but tecniques like pomodoro don't work for me because unfocus my attention repeatly, this script only track the time and you need stop or pause the script when you are done. When you stop the time elapsed is saved to a logfile.  
+
+## Instalation
+
+Only execute the script like `./tracker.sh` or you can create an alias in your bash or zsh profile file like `alias tracker=<Path-to-Script>`
+
+## Usage
+
+`./tracker.sh` to start tracking the time with the defaults.
+`./tracker.sh 240` you can pass the minutes suggested to the session, this is only a reminder, the script don't stop if the time is raised.
+`./tracker.sh log` to show the previous sessions.
+
+## Configuration
+
+![alt](https://link)
+

@@ -1,9 +1,20 @@
 #!/bin/bash
-MINUTES=180 # 3 hours expected
-FILE="$HOME/.log/tracker"
 
+#---Config Section-------------
+MINUTES=120 #Expected Minutes
+FILEPATH="$HOME/.log"
+FILENAME="tracker"
+#-------------------------------
+
+
+
+mkdir -p $FILEPATH
 if [[ "$1" == "log" ]]; then
-    cat "$FILE"
+    if test -f "$FILEPATH/$FILENAME"; then
+        cat "$FILEPATH/$FILENAME"
+    else
+        touch "$FILEPATH/$FILENAME"
+    fi
     exit 0
 fi
 
@@ -39,7 +50,7 @@ while true; do
             elif [ $answer == 's' ] || [ $answer == 'S' ]; then
                 if [ $elapsed -ge 120 ]; then
                     echo "Elapsed: ("$(date -d@$elapsed -u +%H:%M:%S)") at" $(date '+%H:%M %D')" ...SAVED!"
-                    echo " "$(date -d@$elapsed -u +%H:%M:%S)" at" $(date '+%H:%M %D') >> $FILE
+                    echo " "$(date -d@$elapsed -u +%H:%M:%S)" at" $(date '+%H:%M %D') >> "$FILEPATH/$FILENAME"
                 else
                     echo "Don't Saved."
                 fi
