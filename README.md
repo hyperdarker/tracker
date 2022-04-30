@@ -17,5 +17,5 @@ Only execute the script like `./tracker.sh` or you can create an alias in your b
 
 ## Configuration
 
-![alt](https://link)
+![config](https://github.com/hyperdarker/tracker/blob/main/img/config.png)
 
