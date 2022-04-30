@@ -1,5 +1,5 @@
 # Tracker
-No intrusive time tracker.
+Non-intrusive time tracker
 
 ## Why?
 
