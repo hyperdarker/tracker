@@ -11,11 +11,20 @@ Only execute the script like `./tracker.sh` or you can create an alias in your b
 
 ## Usage
 
+![usage](https://github.com/hyperdarker/tracker/blob/main/img/usage.png)
+
 `./tracker.sh` to start tracking the time with the defaults.
+
 `./tracker.sh 240` you can pass the minutes suggested to the session, this is only a reminder, the script don't stop if the time is raised.
+
 `./tracker.sh log` to show the previous sessions.
 
 ## Configuration
 
 ![config](https://github.com/hyperdarker/tracker/blob/main/img/config.png)
+<!-- ![config](https://raw.githubusercontent.com/hyperdarker/tracker/main/img/config.png) -->
+
+`MINUTES` Default minutes expected for a session.
+`FILEPATH` Directory path to logfile
+`FILENAME` Logfile name
 
